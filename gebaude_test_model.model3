@@ -1,0 +1,152 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:clip_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:clip" type="QString" name="alg_id"/>
+      <Option value="Zuschneiden" type="QString" name="component_description"/>
+      <Option value="483" type="double" name="component_pos_x"/>
+      <Option value="312" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:clip_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Gebauede_Stadtteile">
+          <Option value="native:clip_1" type="QString" name="child_id"/>
+          <Option value="Gebauede_Stadtteile" type="QString" name="component_description"/>
+          <Option value="683" type="double" name="component_pos_x"/>
+          <Option value="357" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Gebauede_Stadtteile" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:intersection_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OVERLAY">
+          <Option type="Map">
+            <Option value="stadtteilehd" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:intersection_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:intersection" type="QString" name="alg_id"/>
+      <Option value="Verschneidung" type="QString" name="component_description"/>
+      <Option value="263" type="double" name="component_pos_x"/>
+      <Option value="212" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:intersection_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="gebudegrossraumhd" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_FIELDS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OVERLAY">
+          <Option type="Map">
+            <Option value="stadtgebiethd" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OVERLAY_FIELDS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="" type="QString" name="model_group"/>
+  <Option value="Gebaude_Test" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="gebudegrossraumhd">
+      <Option type="List" name="data_types">
+        <Option value="5" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Gebaude_Grossraum_HD" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="gebudegrossraumhd" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="native:clip_1:Gebauede_Stadtteile">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option value="Gebauede_Stadtteile" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="native:clip_1:Gebauede_Stadtteile" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="stadtgebiethd">
+      <Option type="List" name="data_types">
+        <Option value="5" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Stadtgebiet_HD" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="stadtgebiethd" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="stadtteilehd">
+      <Option type="List" name="data_types">
+        <Option value="5" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Stadtteile_HD" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="stadtteilehd" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="gebudegrossraumhd">
+      <Option value="gebudegrossraumhd" type="QString" name="component_description"/>
+      <Option value="120" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="gebudegrossraumhd" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="stadtgebiethd">
+      <Option value="stadtgebiethd" type="QString" name="component_description"/>
+      <Option value="340" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="stadtgebiethd" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="stadtteilehd">
+      <Option value="stadtteilehd" type="QString" name="component_description"/>
+      <Option value="560" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="stadtteilehd" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>
